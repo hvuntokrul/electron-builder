@@ -7,11 +7,11 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/electron-userland/electron-builder.git",
+    "url": "git+https://github.com/hvuntokrul/electron-builder.git",
     "directory": "packages/electron-updater"
   },
-  "bugs": "https://github.com/electron-userland/electron-builder/issues",
-  "homepage": "https://github.com/electron-userland/electron-builder",
+  "bugs": "https://github.com/hvuntokrul/electron-builder/issues",
+  "homepage": "https://github.com/hvuntokrul/electron-builder",
   "files": [
     "out"
   ],
