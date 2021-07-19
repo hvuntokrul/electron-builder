@@ -1,3 +1,4 @@
+import fs from 'fs';
 import { AllPublishOptions } from "builder-util-runtime"
 import { AppAdapter } from "./AppAdapter"
 import { AppUpdater, DownloadExecutorTask } from "./AppUpdater"
@@ -60,7 +61,7 @@ export abstract class BaseUpdater extends AppUpdater {
         installerPath,
         isSilent,
         isForceRunAfter,
-        isAdminRightsRequired: downloadedFileInfo.isAdminRightsRequired,
+        isAdminRightsRequired: installerPath.startsWith(`C:/Program Files/`) || downloadedFileInfo.isAdminRightsRequired,
       })
     } catch (e) {
       this.dispatchError(e)
